@@ -1,0 +1,7 @@
+.list {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  justify-content: space-around;
+}
