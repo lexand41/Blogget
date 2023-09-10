@@ -1,10 +1,17 @@
 import style from './Time.module.css';
 import PropTypes from 'prop-types';
 import formatDate from '../../../../../utils/formatDate';
+import {Text} from '../../../../../UI/Text';
 
 
 export const Time = ({date}) => (
-  <time className={style.date} dateTime={date}>{formatDate(date)}</time>
+  <Text As='time'
+    size={10}
+    tsize={16}
+    fweight='bold'
+    color='grey99'
+    className={style.date}
+    dateTime={date}>{formatDate(date)}</Text>
 );
 
 Time.propTypes = {
