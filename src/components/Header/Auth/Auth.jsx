@@ -38,7 +38,11 @@ export const Auth = ({token, delToken}) => {
   }, [token]);
 
   const handleLogout = () => {
-    setLogout(style.active);
+    if (logout === style.logout) {
+      setLogout(style.active);
+    } else {
+      setLogout(style.logout);
+    }
   };
 
   const handleCloseLogout = () => {
